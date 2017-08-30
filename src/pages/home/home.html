@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="voice.uid" name="uid"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="get()">Get</button>
+      <button ion-button (click)="delete()">Delete</button>
+      <button ion-button (click)="create()">Create</button>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="enrol()">Enrol</button>
+    </ion-item>
+    <ion-item>
+        Remember to wash your hands before eating
+      <button ion-button (click)="authenticate()">Authenticate</button>
+    </ion-item>
+    </form>
+</ion-content>
